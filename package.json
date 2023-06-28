@@ -1,0 +1,16 @@
+{
+  "name": "matrix-led-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.2.0",
+    "serialport": "^11.0.0"
+  }
+}
