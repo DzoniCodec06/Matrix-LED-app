@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 1980;
+    height: 1080;
+    background-image: url("pozadina-2.PNG");
+    background-size: cover;
+}
+
+/*
+.background {
+    width: 1980;
+    height: 1080;
+    background-color: lightcoral;
+} */

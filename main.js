@@ -1,9 +1,13 @@
 const { app, BrowserWindow } = require("electron");
 
+/*
+        width: 1200,
+        height: 700,
+*/
+
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 500,
-        height: 400,
+        autoHideMenuBar: true,
         webPreferences: {
             devTools: true,
             nodeIntegration: true,
@@ -13,6 +17,7 @@ const createWindow = () => {
 
     win.loadFile("./src/index.html");
     win.webContents.openDevTools();
+    win.maximize();
 }
 
 
