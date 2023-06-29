@@ -4,15 +4,93 @@
 }
 
 body {
-    width: 1980;
-    height: 1080;
-    background-image: url("pozadina-2.PNG");
-    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #232323;
 }
 
-/*
+header {
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+h1 {
+    font-family: 'Porter Sans Block', sans-serif;
+    color: white;
+    font-weight: 400;
+}
+
 .background {
-    width: 1980;
-    height: 1080;
-    background-color: lightcoral;
-} */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+}
+
+.waves {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wave-1 {
+    transform: rotate(180deg);
+}
+
+.buttons {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    padding: 30px 30px;
+    margin: 15px 15px;
+    background-color: #BEBEBE;
+    border: 10px solid #D9D9D9;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    transition: all ease 0.2s;
+    background-color: #b3b3b3;
+    border-color: #cacaca;
+}
+
+.first-btns, .sec-btns, .thr-btns {
+    margin-block: 30px;
+}
+
+.button:active {
+    transition: all ease-out 0.15s;
+    padding: 40px 40px;
+}
+
+#on {
+    background-color: #12B904;
+    border-color: #26DC16;
+}
+
+#on:hover {
+    transition: all ease 0.2s;
+    background-color: #10a702;
+    border-color: #23c514;
+}

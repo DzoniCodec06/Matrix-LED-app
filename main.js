@@ -1,12 +1,13 @@
 const { app, BrowserWindow } = require("electron");
 
-/*
-        width: 1200,
-        height: 700,
-*/
+const MIN_WIDTH = 1900;
+const MIN_HEIGHT = 1000;
 
 const createWindow = () => {
     const win = new BrowserWindow({
+        minWidth: MIN_WIDTH,
+        minHeight: MIN_HEIGHT, 
+        resizable: true,
         autoHideMenuBar: true,
         webPreferences: {
             devTools: true,
@@ -16,11 +17,9 @@ const createWindow = () => {
     });
 
     win.loadFile("./src/index.html");
-    win.webContents.openDevTools();
+    //win.webContents.openDevTools();       // --------- THIS CODE OPENS DEVELOPMENT CONSOLE ON PROGRAM STARTUP --------- //
     win.maximize();
 }
-
-
 app.whenReady().then(() => {
     createWindow();
 
